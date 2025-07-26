@@ -1,0 +1,25 @@
+name: main
+
+on:
+  workflow_dispatch:
+    inputs:
+      image:
+        required: true
+        type: string
+        description: docker image tag
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: |
+          echo ${{ github.event.inputs.image }}
+
+  job2:
+    runs-on: ubuntu-latest
+    needs: job1
+
+    steps:
+      - run: |
+          echo ${{ github.event.inputs.image }}

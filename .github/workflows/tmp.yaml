@@ -1,0 +1,16 @@
+name: tmp
+
+on:
+  workflow_dispatch:
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - run: |
+          sleep 15
+          echo "::notice::docker_image_tag: hogehoge"
+      - run: |
+          echo "::notice::pj: tmppj"

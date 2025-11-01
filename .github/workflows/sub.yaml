@@ -1,9 +1,9 @@
-name: sub_workflow
+name: "[wf] sub_workflow"
 
 on:
   workflow_run:
     workflows:
-      - main_workflow
+      - "[wf] sub_workflow"
     types: 
       - completed
 

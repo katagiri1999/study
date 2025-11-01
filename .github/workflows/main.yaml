@@ -1,4 +1,4 @@
-name: main_workflow
+name: "[wf] sub_workflow"
 
 on:
   workflow_dispatch:

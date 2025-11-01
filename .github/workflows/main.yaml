@@ -1,4 +1,4 @@
-name: '[wf] main_workflow'
+name: main_workflow
 
 on:
   workflow_dispatch:

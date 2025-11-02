@@ -1,11 +1,7 @@
 name: "sub workflow"
 
 on:
-  workflow_run:
-    workflows:
-      - "main workflow"
-    types: 
-      - completed
+  workflow_dispatch:
 
 jobs:
   main:

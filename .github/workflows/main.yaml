@@ -19,5 +19,5 @@ jobs:
             ["1.3"]="image-1.3"
           )
 
-          target=${animals[$tmp]}
+          target=${images[$tmp]}
           echo $target

@@ -30,4 +30,3 @@ jobs:
             image_tag=${images[$input_version]}
             echo $image_tag
           fi
-
